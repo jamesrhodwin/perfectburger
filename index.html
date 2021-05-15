@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="index.js"></script>
+    <style>
+      #baconImage {
+        display: none;
+      }
+      #cucumbersImage {
+        display: none;
+      }
+      #cheeseImage {
+        display: none;
+      }
+      #lettuceImage {
+        display: none;
+      }
+      #onionsImage {
+        display: none;
+      }
+      #mushroomsImage {
+        display: none;
+      }
+      #tomatoesImage {
+        display: none;
+      }
+      #meatImage {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row d-flex justify-content-center mt-100">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Burger Maker</h4>
+            <p class="card-description">Select the ingredients for your perfect burger!</p>
+            <div>
+              <div class="row">
+                <div class="column">
+                  <label for="money">Add money: </label>
+                  <input type="number" id="money" /><button onclick="updateMoney(document.getElementById('money').value)">Add</button><br />
+                  <div>Your Money: <b id="userMoney"></b></div>
+                  <input type="checkbox" class="option-input checkbox" id="bacon" onclick="updateTotal()" />
+                  <label for="bacon">$0.5 Bacon</label><br />
+                  <input type="checkbox" class="option-input checkbox" id="cucumbers" onchange="updateTotal()" />
+                  <label for="cucumbers">$0.75 Cucumbers</label><br />
+                  <input type="checkbox" class="option-input checkbox" id="lettuce" onchange="updateTotal()" />
+                  <label for="lettuce">$0.5 Lettuce</label><br />
+                  <input type="checkbox" class="option-input checkbox" id="mushrooms" onchange="updateTotal()" />
+                  <label for="mushrooms">$0.5 Mushrooms</label><br />
+                  <input type="checkbox" class="option-input checkbox" id="tomatoes" onchange="updateTotal()" />
+                  <label for="tomatoes">$0.5 Tomatoes</label><br />
+                  <input type="checkbox" class="option-input checkbox" id="cheese" onchange="updateTotal()" />
+                  <label for="cheese">$1.0 Cheese</label><br />
+                  <input type="checkbox" class="option-input checkbox" id="meat" onchange="updateTotal()" />
+                  <label for="meat">$2.0 Meat</label><br />
+                  <input type="checkbox" class="option-input checkbox" id="onions" onchange="updateTotal()" />
+                  <label for="onions">$0.25 Onions</label>
+                  <br />
+                  <br />
+                  <fieldset>
+                    <b
+                      >Total Cost:
+                      <p id="totalCost">$1.0</p></b
+                    >
+                  </fieldset>
+                  <hr />
+                  <button onclick="buy()">Buy</button><br />
+                </div>
+                <div class="column">
+                  <div><img src="assets/breadon.png" id="breadOnImage" height="50" width="5%" /></div>
+                  <div>
+                    <img src="assets/bacon.png" id="baconImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/cucumbers.png" id="cucumbersImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/lettuce.png" id="lettuceImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/mushrooms.png" id="mushroomsImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/tomatoes.png" id="tomatoesImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/cheese.png" id="cheeseImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/meat.png" id="meatImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/onions.png" id="onionsImage" height="50" width="5%" />
+                  </div>
+                  <div>
+                    <img src="assets/breadunder.png" id="breadUnderImage" height="50" width="5%" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
